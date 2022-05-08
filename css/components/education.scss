@@ -1,0 +1,111 @@
+.education__content{
+    height: 704px;
+    min-width: rem(1530px);
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 0px 147px 0px;
+
+    @include tablets{
+        min-width: 738px;
+        margin: 0px 0px 120px 0px;
+    }
+
+    @include phones{
+        min-width: rem(330px);
+        display: flex;
+        justify-content: space-between
+    }
+}
+
+.education__subtitle{
+    font-size: rem(16px);
+    color: #331a2f78;
+}
+
+.education__title{
+    min-width: rem(880px);
+    font-weight: bold;
+    font-size: rem(56px);
+    
+    @include desktop{
+        font-size: rem(46px);
+        min-width: rem(688px);
+    }
+
+    @include phones{
+        min-width: 202px;
+        line-height: 2;
+        font-size: rem(30px);
+    }
+
+    .education__title-color{
+        color: #CF51CE;
+    }
+}
+
+.education__price{
+    display: flex;
+    margin: 20px 0px 0px 0px;
+}
+
+.price__text{
+    font-size: rem(35px);
+    margin: 0px 0px 0px 20px;
+    font-weight: 600;
+
+    .price__text-color{
+        color: #CF51CE;
+    }
+}
+
+.education__desc{
+    max-width: rem(868px);
+
+    @include desktop{
+        max-width: rem(551px);
+    }
+}
+
+.education__text{
+
+    @include phones{
+        width: 330px;
+    }
+
+    .education__text-list{
+        padding: 20px 0px 0px 0px;
+        color: #331a2fcb;
+    }
+}
+
+.education__img{
+    background: url("./../../img/Bg\ stars.jpg") center center no-repeat;
+    min-width: 660px;
+    height: 650px;
+
+    @include desktop{
+        min-width: 630px;
+    }
+
+    @include tablets{
+        min-width: 410px;
+        background: none;
+        margin: 140px -114px 0px 0px;
+    }
+
+    @include phones{
+        background: none;
+        min-width: 245px;
+        height: 245px;
+        margin: -51px 0px 0px -130px;
+    }
+}
+
+.education__elipse{
+    position: absolute;
+    transform: translate(1480px, -600px);
+
+    @include desktop{
+        display: none;
+    }
+}

@@ -1,0 +1,203 @@
+.hero{
+    margin: 35px 0px 70px 0px;
+}
+
+.hero__img{
+    position: absolute;
+    width: 35px;
+    height: 600px;
+
+    @include desktop{
+        height: 300px;
+        width: 20px;
+    }
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    min-width: rem(1400px);
+    height: rem(80px);
+
+    @include desktop{
+        min-width: rem(1200px);
+    }
+
+    @include tablets{
+        min-width: rem(768px);
+        justify-content: space-between;
+    }
+
+    @include phones{
+        min-width: rem(330px);
+    }
+
+    .header__logo{
+        display: flex;
+        max-width: rem(420px);
+
+        @include phones{
+            width: 330px;
+        }
+    }
+}
+
+.header__logo-pic{
+    margin-right: rem(18px);
+
+    @include phones{
+        width: 35px;
+        height: 32px;
+    }
+}
+
+.header__logo-title{
+    font-size: 32px;
+    font-weight: bold;
+    color: #54618E;
+    margin-right: rem(40px);
+
+    @include phones{
+        font-size: 18px;
+    }
+
+    .header__logo-color{
+        color: #CF51CE;
+    }
+}
+
+.header__logo-text{
+    font-size: 14px;
+    color: #331A2F;
+    min-width: rem(190px);
+
+    
+    @include desktop{
+        min-width: rem(158px);
+    }
+
+    @include phones{
+        display: none;
+    }
+}
+
+.header__logo-line{
+    border-left: 2px solid #331a2f72;
+    height: rem(80px);
+    position: absolute;
+    margin-left: rem(-20px);
+
+    
+    @include desktop{
+        height: rem(95px);
+    }
+}
+
+.header__menu{
+
+    .header__menu-link{
+        &:hover{
+            color: #46214096;
+        }
+    }
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.header__menu-list{
+    display: flex;
+    
+    .header__menu-item{ 
+        &:nth-child(1){
+            &::after{
+                content: "";
+                cursor: pointer;
+                border: 3px solid transparent; border-top: 6px solid #331A2F;
+                display: inline-block;
+                position: absolute;
+                margin: 19px 0px 0px 0px;
+
+                @include desktop{
+                    margin: 15px 0px 0px 2px;
+                }
+            }
+        }
+
+        .header__menu-link{
+            text-decoration: none;
+            margin-left: rem(40px);
+        }
+
+    }
+
+}
+
+.header__contacts{
+    text-decoration: none;
+    display: flex;
+
+    @include tablets{
+        display: none;
+    }
+}
+
+.contacts-phone__icon{
+    padding: 6px 8px 0px 0px;
+}
+
+.header__button{
+    display: flex;
+    color: white;
+    font-size: rem(23px);
+    padding: 10px 23px;
+    border-radius: rem(10px);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background-color: #CF51CE;
+    margin: -2px 0px 37px 0px;
+
+    @include desktop{
+        padding: 10px 23px;
+        margin: -6px 0px 30px 0px;
+    }
+
+    @include tablets{
+        transform: translateX(rem(40px));
+    }
+
+    @include phones{
+        transform: translateX(rem(-30px));
+        padding: 8px 23px;
+        margin: -6px 0px 30px 0px;
+        text-align: center;
+    }
+
+    .header__button-icon{
+        margin: 0px 5px 0px 0px;
+
+        @include phones{
+            width: 13px;
+            height: 13px;
+            margin: 2px 5px 0px 0px;
+        }
+    }
+}
+
+.header__button-text{
+    @include phones{
+        margin: 0px 11px 0px 0px;
+    }
+}
+
+.header__button{
+    :hover{
+        color: #331A2F;
+    }
+}
